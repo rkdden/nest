@@ -14,10 +14,10 @@ export class User {
     @Column({ type: 'smallint', default: 10})
     user_level: string;
 
-    @Column({ type: "varchar", length: 100})
+    @Column({ type: "varchar", length: 100, nullable: true})
     user_profile_image: string;
 
-    @Column({ type: "varchar", length: 255})
+    @Column({ type: "varchar", length: 255, nullable: true})
     user_intro: string;
 
     @Column({ type: "varchar", length: 30})
